@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class ElementsX extends Parent{
     public ElementsX() {
         PageFactory.initElements(GWD.getDriver(),this);
@@ -85,4 +87,23 @@ public class ElementsX extends Parent{
 
 
 
+    //AccountOverview
+    @FindBy(xpath = "//a[starts-with(@href, 'activity.htm?id=')]")
+    public WebElement AccountNumber;
+
+    @FindBy(xpath = "(//tbody)[1]")
+    public WebElement tdElements;
+
+
+    @FindBy(xpath = "//*[@id='transactionType']/option[@value='All']")
+    public WebElement AllButton;
+
+    @FindBy(xpath = "//*[@id='transactionType']/option[@value='Credit']")
+    public WebElement CreditButton;
+
+    @FindBy(xpath = "//*[@id='transactionType']/option[@value='Debit']")
+    public WebElement DebitButton;
+
+    @FindBy(xpath = "(//tr)[8]")
+    public WebElement tableHeaders;
 }

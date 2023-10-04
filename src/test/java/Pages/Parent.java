@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
+import java.util.List;
 
 public class Parent {
 
@@ -58,5 +59,22 @@ public class Parent {
         selector.selectByIndex(index);
 
     }
+    public void MyAssertElement(WebElement element,WebElement element2){
+        wait.until(ExpectedConditions.visibilityOf(element));
+        Assert.assertEquals(element,element2);
+    }
 
+    public void MyAssert(WebElement element,String number){
+        wait.until(ExpectedConditions.visibilityOf(element));
+        scrollToElement(element);
+        String text=element.getText();
+        boolean countainsNumber=text.contains(number);
+
+        Assert.assertTrue(countainsNumber,"Sayı yok");
+    }
+
+    public void MysizeAssert(List<WebElement> element, int number){
+        int productsize = element.size();
+        Assert.assertEquals(productsize,number,"beklenen sonuç la gelen sonuç doğru değil");
+    }
 }
