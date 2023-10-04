@@ -2,12 +2,13 @@ package Pages;
 
 import Utilities.GWD;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.time.Duration;
 
@@ -45,6 +46,17 @@ public class Parent {
         Actions actions = new Actions(GWD.getDriver());
         Action action = actions.moveToElement(element).build();
         action.perform();
+    }
+    public void textContainsAssert(WebElement elm,String text){
+        wait.until(ExpectedConditions.textToBePresentInElement(elm,text));
+        Assert.assertTrue(elm.getText().toLowerCase().contains(text.toLowerCase()));
+
+    }
+    public void selectAction(WebElement elm,int index){
+        Select selector=new Select(elm);
+        MyClick(elm);
+        selector.selectByIndex(index);
+
     }
 
 }
