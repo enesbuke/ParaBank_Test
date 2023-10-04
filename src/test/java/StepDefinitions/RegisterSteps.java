@@ -21,10 +21,22 @@ public class RegisterSteps {
 
     @Then("User enter register information and click register button")
     public void userEnterRegisterInformationAndClickRegisterButton() {
-
+    x.mySendKeys(x.regFirstName,"Eaves");
+    x.mySendKeys(x.regLastName,"Eavess");
+    x.mySendKeys(x.regAddress, "Sancaktepe/kızılay cad.");
+    x.mySendKeys(x.regCity,"Istanbul");
+    x.mySendKeys(x.regState,"Turkey");
+    x.mySendKeys(x.regZipCode,"23098");
+    x.mySendKeys(x.regPhone,"+907679875184");
+    x.mySendKeys(x.regSSN,"123");
+    x.mySendKeys(x.regUsername,"Eaves2Y");
+    x.mySendKeys(x.regPassword,"918273");
+    x.mySendKeys(x.regConfirm, "918273");
+    x.MyClick(x.regConfirmButton);
     }
 
     @And("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
+        x.textContainsAssert(x.regSuccessText, "Your account was created successfully");
     }
 }

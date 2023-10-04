@@ -38,6 +38,8 @@ public class ElementsX extends Parent{
     public WebElement regConfirm;
     @FindBy(xpath = "//input[@value='Register']")
     public WebElement regConfirmButton;
+    @FindBy(xpath = "//div[@id='rightPanel']/p")
+    public WebElement regSuccessText;
     //RegElements **
 
     //loginElements *
@@ -47,6 +49,8 @@ public class ElementsX extends Parent{
     public WebElement passwordText;
     @FindBy(xpath = "//input[@value='Log In']")
     public WebElement loginButton;
+    @FindBy(xpath = "//p[@class='smallText']/b")
+    public WebElement homePageWelcomeText;
     //loginElements**
 
     //HomePage leftPanel Elements*
@@ -67,5 +71,18 @@ public class ElementsX extends Parent{
     @FindBy(xpath = "(//div[@id='leftPanel']//li)[8]")
     public WebElement LogoutButton;
     //HomePage leftPanel Elements**
+
+    //OpenNewActionElements
+
+    @FindBy(xpath = "//select[@id='type']")
+    public WebElement accountType;
+    @FindBy(xpath = "//select[@id='fromAccountId']")
+    public WebElement slTransferFunds;
+    @FindBy(xpath = "//input[@value='Open New Account']")
+    public WebElement newAccountButton;
+    @FindBy(xpath = "((//div[@class='ng-scope'])[2]/p)[1]")
+    public WebElement newAccSuccessText;
+
+
 
 }
