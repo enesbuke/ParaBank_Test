@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Parent {
@@ -59,9 +60,18 @@ public class Parent {
         selector.selectByIndex(index);
 
     }
-    public void MyAssertElement(WebElement element,WebElement element2){
+
+    public String refList(WebElement element){
         wait.until(ExpectedConditions.visibilityOf(element));
-        Assert.assertEquals(element,element2);
+        List<String> refList = new ArrayList<>();
+        String ref=element.getText();
+        refList.add(ref);
+        return ref;
+    }
+
+    public void lastListClick(List<WebElement> elements){
+        WebElement element = elements.get(elements.size()-1);
+        MyClick(element);
     }
 
     public void MyAssert(WebElement element,String number){
@@ -76,5 +86,15 @@ public class Parent {
     public void MysizeAssert(List<WebElement> element, int number){
         int productsize = element.size();
         Assert.assertEquals(productsize,number,"beklenen sonuç la gelen sonuç doğru değil");
+    }
+
+    public void MyAssertElement(WebElement element,WebElement element2){
+        wait.until(ExpectedConditions.visibilityOf(element));
+        Assert.assertEquals(element,element2);
+    }
+
+    public void MyAssertString(String element,String element2){
+
+        Assert.assertEquals(element,element2);
     }
 }
