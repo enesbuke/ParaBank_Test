@@ -4,17 +4,12 @@ import Pages.ElementsX;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebElement;
 
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 import static org.testng.AssertJUnit.assertTrue;
 
 
-public class _05_AccountOverview {
+public class AccountOverviewSteps {
     ElementsX pb = new ElementsX();
 
     @When("clicks on Accounts Overview")
