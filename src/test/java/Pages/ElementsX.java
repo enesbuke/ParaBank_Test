@@ -42,6 +42,17 @@ public class ElementsX extends Parent{
     public WebElement regSuccessText;
     //RegElements **
 
+    //loginElements *
+    @FindBy(xpath = "//input[@name='username']")
+    public WebElement usernameText;
+    @FindBy(xpath = "//input[@name='password']")
+    public WebElement passwordText;
+    @FindBy(xpath = "//input[@value='Log In']")
+    public WebElement loginButton;
+    @FindBy(xpath = "//p[@class='smallText']/b")
+    public WebElement homePageWelcomeText;
+    //loginElements**
+
 
     //HomePage leftPanel Elements*
     @FindBy(xpath = "(//div[@id='leftPanel']//li)[1]")
@@ -63,7 +74,6 @@ public class ElementsX extends Parent{
     //HomePage leftPanel Elements**
 
     //OpenNewActionElements
-
     @FindBy(xpath = "//select[@id='type']")
     public WebElement accountType;
     @FindBy(xpath = "//select[@id='fromAccountId']")
