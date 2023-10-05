@@ -4,16 +4,17 @@
 #### Cases
 - User Registration
 - User Login
-- Adding a New Address to the User Account
-- Adding Products to the Cart
-- Checking the Number of Listed Products
-- Verifying Products in the Cart
-- Placing an Order and Making a Payment
-- Sending an Email to the Website Team as a User
+- Bill Pay Function
+- Account Overview Function
+- New Account Function
+- Transfer Funds Function
+- Update Contact Info Function
+- Request Loan Function
+- 
 #
 ## Collaborators
- * _Alperen ŞANLI_ -- **Team Lead** 
- *  _Enes BÜKE_ -- **Tester**
+ * _Alperen ŞANLI_ -- **Tester**
+ *  _Enes BÜKE_ --  **Team Lead**
  * _Sinem YURDUSEVER_ -- **Tester**
  * _Murat ENGİNEL_ -- **Tester**
  * _Fatih GÜVENÇ_ -- **Tester**
@@ -40,7 +41,7 @@
 | TestNG | Next Generation Testing Tool. |
 | Selenium | Browser Automation Framework. |
 | commons.io | The Apache Commons IO library |
-|Cucumber |In order to write BDD tests languages and technologies.|
+|Cucumber | In order to write BDD tests languages and technologies |
 
 ## **Lisence**  
 
