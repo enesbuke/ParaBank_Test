@@ -29,7 +29,7 @@ public class RegisterSteps {
     x.mySendKeys(x.regZipCode,"23098");
     x.mySendKeys(x.regPhone,"+907679875184");
     x.mySendKeys(x.regSSN,"123");
-    x.mySendKeys(x.regUsername,"Eaves2Y");
+    x.mySendKeys(x.regUsername,"Eaves1Y");
     x.mySendKeys(x.regPassword,"918273");
     x.mySendKeys(x.regConfirm, "918273");
     x.MyClick(x.regConfirmButton);
