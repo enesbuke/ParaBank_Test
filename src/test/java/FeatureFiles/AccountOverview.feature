@@ -4,7 +4,7 @@ Feature: Account Overview
     Given Navigate to ParaBank
     When User enter login information
     Then User should login successfully
-
+  @Regression
   Scenario: Accessing account details
     When clicks on Accounts Overview
     Then should see customer data details

@@ -7,7 +7,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class NewAccountSteps {
-    ElementsX xElm=new ElementsX();
+    ElementsX xElm = new ElementsX();
+
     @Given("User click Open New Account button")
     public void userClickOpenNewAccountButton() {
         xElm.MyClick(xElm.openNewAccountButton);
@@ -15,11 +16,11 @@ public class NewAccountSteps {
 
     @When("User select the required information")
     public void userSelectTheRequiredInformation() {
-       int selectAccount=Parent.randomGenerator(2);
-       xElm.selectAction(xElm.accountType,selectAccount);
-        int selectChoose=Parent.randomGenerator(6);
-       xElm.selectAction(xElm.slTransferFunds,selectChoose);
-       xElm.MyClick(xElm.newAccountButton);
+        int selectAccount = Parent.randomGenerator(2);
+        xElm.selectAction(xElm.accountType, selectAccount);
+        int selectChoose = Parent.randomGenerator(6);
+        xElm.selectAction(xElm.slTransferFunds, selectChoose);
+        xElm.MyClick(xElm.newAccountButton);
     }
 
     @Then("Success account creation message should be displayed")

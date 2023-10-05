@@ -10,16 +10,16 @@ import org.openqa.selenium.TakesScreenshot;
 public class Hooks {
 
     @Before
-    public void before(){
+    public void before() {
 
     }
 
     @After
-    public void after(Scenario scenario){
+    public void after(Scenario scenario) {
 
-        if (scenario.isFailed()){
-            TakesScreenshot ts=((TakesScreenshot) GWD.getDriver());
-            byte[] hafizadakiHali=ts.getScreenshotAs(OutputType.BYTES);
+        if (scenario.isFailed()) {
+            TakesScreenshot ts = ((TakesScreenshot) GWD.getDriver());
+            byte[] hafizadakiHali = ts.getScreenshotAs(OutputType.BYTES);
             scenario.attach(hafizadakiHali, "image/png", "screenshot name");
         }
 

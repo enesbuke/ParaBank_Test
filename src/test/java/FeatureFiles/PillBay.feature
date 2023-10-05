@@ -1,9 +1,10 @@
 Feature:Bill Pay Functionality
+
   Background:
     Given Navigate to ParaBank
     When User enter login information
     Then User should login successfully
-
+  @Regression
   Scenario:Paying bills
     Given Go to bill payment page
     When Pay different types of bills
