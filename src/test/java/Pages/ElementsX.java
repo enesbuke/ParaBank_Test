@@ -143,4 +143,26 @@ public class ElementsX extends Parent{
     @FindBy(xpath = "(//div[@class='ng-scope'])/p")
     public WebElement updateMsg;
 
+    //Loan Feature*
+    @FindBy(xpath = "(//table[@class='form2']//input)[1]")
+    public WebElement loanAmounth;
+    @FindBy(xpath = "(//table[@class='form2']//input)[2]")
+    public WebElement downPayment;
+    @FindBy(xpath = "//table[@class='form2']//select")
+    public WebElement selectFromAccount;
+    @FindBy(xpath = "(//table[@class='form2']//input)[3]")
+    public WebElement applyNowButton;
+    @FindBy(xpath = "//p[@class='error ng-scope']")
+    public WebElement loanErrorMessage;
+    @FindBy(xpath = "//table[@class='form']")
+    public WebElement loanRequestBar;
+    @FindBy(xpath = "//div[@class='ng-scope']/p[1]")
+    public WebElement loanSuccessMessage;
+    @FindBy(xpath = "//a[@id='newAccountId']")
+    public WebElement loanNewAccountID;
+    @FindBy(xpath = "//p[@class='ng-scope']/b")
+    public WebElement noTransactText;
+    @FindBy(xpath = "(//div[@class='ng-scope'])[2]/table")
+    public WebElement accountDetailBar;
+
 }

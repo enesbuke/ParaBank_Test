@@ -97,4 +97,8 @@ public class Parent {
 
         Assert.assertEquals(element,element2);
     }
+    public void ElementDisplayedAssert(WebElement elm){
+        wait.until(ExpectedConditions.visibilityOf(elm));
+        Assert.assertTrue(elm.isDisplayed());
+    }
 }
