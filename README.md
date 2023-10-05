@@ -25,7 +25,7 @@
 > File Project From Version Control  
 > Copy to URL  
    
-**_git@github.com:enesbuke/ParaBank_Test.git_**
+**_git@github.com/enesbuke/ParaBank_Test.git_**
 #
 
 ## Plagins
