@@ -6,12 +6,12 @@ import io.cucumber.java.en.*;
 
 public class UpdateContactinfo {
     ElementsX el=new ElementsX();
-    @When("login to user information panel")
+    @When("Login to user information panel")
     public void loginToUserInformationPanel() {
         el.MyClick(el.UpdateContactButton);
     }
 
-    @Then("update and confirm user information")
+    @Then("Update and confirm user information")
     public void updateAndConfirmUserInformation() {
         el.mySendKeys(el.regFirstName,"Can");
         el.mySendKeys(el.regCity,"Canistan");
@@ -27,11 +27,19 @@ public class UpdateContactinfo {
     el.MyClick(el.LogoutButton);
     }
 
-    @Then("User should update succesfully")
+    @When("User should update succesfully")
     public void userShouldUpdateSuccesfully() {
 
         el.MyAssertString(el.regFirstName.getText(),"Can");
         el.MyAssertString(el.regCity.getText(),"Canistan");
         el.MyAssertString(el.regPhone.getText(),"0909090909");
+    }
+
+    @Then("Negative update")
+    public void negativeUpdate() {
+        el.MyAssertString(el.regFirstName.getText(),"");
+        el.MyAssertString(el.regCity.getText(),"");
+        el.MyAssertString(el.regPhone.getText(),"");
+        el.MyAssert(el.updateNgvMsg,"is required.");
     }
 }

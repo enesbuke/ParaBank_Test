@@ -5,10 +5,11 @@ Feature: Update contact info
     Then User should login successfully
 
   Scenario: Updating contact detail
-    When login to user information panel
-    Then update and confirm user information
+    When Login to user information panel
+    Then Update and confirm user information
     And Update approval
     When User enter login information
     Then User should login successfully
-    And login to user information panel
-    Then User should update succesfully
+    And Login to user information panel
+    When User should update succesfully
+    Then Negative update
