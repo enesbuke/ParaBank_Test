@@ -1,5 +1,5 @@
 # ParaBank_Test
-### The purpose of the test: To conduct manual and automated testing of the Claverppc Shop website.
+### The purpose of the test: To conduct manual and automated testing of the ParaBank website.
 #
 #### Cases
 - User Registration
@@ -25,7 +25,7 @@
 > File Project From Version Control  
 > Copy to URL  
    
-**_git@github.com:sanli-46/Project.Claverppc-Test.git_**  
+**_git@github.com:enesbuke/ParaBank_Test.git_**
 #
 
 ## Plagins
