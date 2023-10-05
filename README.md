@@ -2,6 +2,7 @@
 ### The purpose of the test: To conduct manual and automated testing of the ParaBank website.
 #
 #### Cases
+
 - User Registration
 - User Login
 - Bill Pay Function
@@ -10,13 +11,12 @@
 - Transfer Funds Function
 - Update Contact Info Function
 - Request Loan Function
-- 
+ 
 #
 ## Collaborators
  * 🟢 _Alperen ŞANLI_ --  **Tester**
  * 🟢 _Enes BÜKE_ --  **Team Lead**
  * 🟢 _Sinem YURDUSEVER_ -- **Tester**
- * 🟢 _Murat ENGİNEL_ -- **Tester**
  * 🟢 _Fatih GÜVENÇ_ -- **Tester**
    
 #
