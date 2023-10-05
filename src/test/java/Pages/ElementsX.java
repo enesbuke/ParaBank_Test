@@ -167,4 +167,34 @@ public class ElementsX extends Parent{
     @FindBy(xpath = "(//div[@class='ng-scope'])[2]/table")
     public WebElement accountDetailBar;
 
+    //PillPay
+    @FindBy(css = "input[name='payee.name']")
+    public WebElement payaname;
+    @FindBy(css = "input[name='payee.address.street']")
+    public WebElement address;
+    @FindBy(css = "input[name='payee.address.city']")
+    public WebElement city;
+    @FindBy(css = "input[name='payee.address.state']")
+    public WebElement state;
+    @FindBy(css = "input[name='payee.address.zipCode']")
+    public WebElement zipcode;
+    @FindBy(css = "input[name='payee.phoneNumber']")
+    public WebElement phone;
+    @FindBy(css = "input[name='payee.accountNumber']")
+    public WebElement account;
+    @FindBy(css = "input[name='verifyAccount']")
+    public WebElement verifyaccount;
+    @FindBy(css = "input[name='amount']")
+    public WebElement amount;
+    @FindBy(css = "input[class='button']")
+    public WebElement sendbutton;
+    @FindBy(xpath = "(//div[@ng-show='showResult']/p)[1]")
+    public WebElement verification;
+    @FindBy(css = "a[class='ng-binding']")
+    public WebElement bill;
+    @FindBy(css = "td[class='ng-binding']")
+    public WebElement accountverification;
+    @FindBy(css = "a[class='ng-binding']")
+    public WebElement transaction;
+
 }
