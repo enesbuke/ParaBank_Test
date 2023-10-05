@@ -106,4 +106,41 @@ public class ElementsX extends Parent{
 
     @FindBy(xpath = "(//tr)[8]")
     public WebElement tableHeaders;
+
+
+    //TransferFunds and Update Contact
+    @FindBy(xpath = "//input[@id='amount']")
+    public WebElement amountTxt;
+    @FindBy(xpath = "//select[@id='toAccountId']")
+    public WebElement toAccount;
+    @FindBy(xpath = "(//select[@id='toAccountId']/option)[2]")
+    public WebElement newAccountNum;
+    @FindBy(xpath = "//input[@class='button']")
+    public WebElement transferBtn;
+    @FindBy(xpath = "//span[@id='amount']")
+    public WebElement Amountget;
+
+    @FindBy(xpath = "//span[@id='fromAccountId']")
+    public WebElement fromAccountId;
+    @FindBy(xpath = "//span[@id='toAccountId']")
+    public WebElement toAccountId;
+    @FindBy(xpath = "(//a[@class='ng-binding'])[1]")
+    public WebElement transferAcount;
+
+    @FindBy(xpath = "(//tbody/tr[@class='ng-scope'])/td/a")
+    public List<WebElement> lastTransfer;
+    @FindBy(xpath = "//tr/td[2]")
+    public WebElement transactionId ;
+    @FindBy(xpath = "((//tbody/tr)/td)[10]")
+    public WebElement amountcopy ;
+
+    @FindBy(xpath = "//input[@id='criteria.transactionId']")
+    public WebElement transactionidText ;
+    @FindBy(xpath = "(//button[@class='button'])[1]")
+    public WebElement transactionButton ;
+    @FindBy(xpath = "//input[@class='button']")
+    public WebElement updateButton;
+    @FindBy(xpath = "(//div[@class='ng-scope'])/p")
+    public WebElement updateMsg;
+
 }
