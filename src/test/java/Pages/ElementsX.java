@@ -142,6 +142,8 @@ public class ElementsX extends Parent{
     public WebElement updateButton;
     @FindBy(xpath = "(//div[@class='ng-scope'])/p")
     public WebElement updateMsg;
+    @FindBy(xpath = "//span[@class='error ng-scope']")
+    public WebElement updateNgvMsg;
 
     //Loan Feature*
     @FindBy(xpath = "(//table[@class='form2']//input)[1]")
