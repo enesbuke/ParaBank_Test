@@ -13,11 +13,11 @@
 - 
 #
 ## Collaborators
- * _Alperen ŞANLI_ -- **Tester**
- *  _Enes BÜKE_ --  **Team Lead**
- * _Sinem YURDUSEVER_ -- **Tester**
- * _Murat ENGİNEL_ -- **Tester**
- * _Fatih GÜVENÇ_ -- **Tester**
+ * 🟢 _Alperen ŞANLI_ --  **Tester**
+ * 🟢 _Enes BÜKE_ --  **Team Lead**
+ * 🟢 _Sinem YURDUSEVER_ -- **Tester**
+ * 🟢 _Murat ENGİNEL_ -- **Tester**
+ * 🟢 _Fatih GÜVENÇ_ -- **Tester**
    
 #
 #
