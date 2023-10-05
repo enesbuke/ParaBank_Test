@@ -1,5 +1,5 @@
 Feature: Register Functionality
-
+@SmokeTest
   Scenario: Create new account
 
     Given Navigate to ParaBank

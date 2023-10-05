@@ -22,6 +22,7 @@ public class AccountOverviewSteps {
         System.out.println(pb.tdElements.getText());
 
     }
+
     @And("click on an account number")
     public void clickOnAnAccountNumber() {
         pb.MyClick(pb.AccountNumber);
@@ -30,10 +31,10 @@ public class AccountOverviewSteps {
     @And("should see activity list")
     public void shouldSeeActivityList() {
 
-        pb.MyAssert(pb.tdElements,"Account Number:");
-        pb.MyAssert(pb.tdElements,"Account Type:");
-        pb.MyAssert(pb.tdElements,"Balance:");
-        pb.MyAssert(pb.tdElements,"Available:");
+        pb.MyAssert(pb.tdElements, "Account Number:");
+        pb.MyAssert(pb.tdElements, "Account Type:");
+        pb.MyAssert(pb.tdElements, "Balance:");
+        pb.MyAssert(pb.tdElements, "Available:");
     }
 
     @And("click on credit, debit and All button")
@@ -47,10 +48,10 @@ public class AccountOverviewSteps {
     public void shouldSeeAsMentionedInCustomerData(String arg0) {
 
 
-        pb.MyAssert(pb.tableHeaders,"Date");
-        pb.MyAssert(pb.tableHeaders,"Transaction");
-        pb.MyAssert(pb.tableHeaders,"Debit (-)");
-        pb.MyAssert(pb.tableHeaders,"Credit (+)");
+        pb.MyAssert(pb.tableHeaders, "Date");
+        pb.MyAssert(pb.tableHeaders, "Transaction");
+        pb.MyAssert(pb.tableHeaders, "Debit (-)");
+        pb.MyAssert(pb.tableHeaders, "Credit (+)");
 
     }
 

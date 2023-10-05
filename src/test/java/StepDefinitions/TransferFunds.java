@@ -26,7 +26,7 @@ public class TransferFunds {
     public void realisedTransverControl() {
 
         el.Amountget.isEnabled();
-        el.MyAssert(el.Amountget,"300");
+        el.MyAssert(el.Amountget, "300");
         el.fromAccountId.isEnabled();
         System.out.println(el.fromAccountId.getText());
         el.toAccountId.isEnabled();
